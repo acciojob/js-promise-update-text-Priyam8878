@@ -1,5 +1,5 @@
 //your JS code here. If required.
-let res = document.getElementById("output")
+//let res = document.getElementById("output")
 function greetings() {
 	return new Promise ((resolve,reject) => {
 		setTimeout(() => {
@@ -8,7 +8,6 @@ function greetings() {
 	})
 	
 }
-let p = greetings().then((value) => {
-    console.log(value)
-})
-res.innerHTML = p;
+greetings().then(message => {
+    document.getElementById("output").innerHTML = message;
+  });
