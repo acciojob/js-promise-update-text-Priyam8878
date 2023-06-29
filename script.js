@@ -8,15 +8,6 @@ function greetings() {
 	})
 	
 }
-unction greetings() {
-	return new Promise ((resolve,reject) => {
-		setTimeout(() => {
-			resolve("Hello, world")
-		})
-	})
-	
-}
-
 let p = greetings().then((value) => {
     console.log(value)
 })
